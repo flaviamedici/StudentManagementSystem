@@ -30,13 +30,13 @@ class AgeCalculator(QWidget):
 
         self.setLayout(grid)
 
-def calculate_age(self):
-    current_year = datetime.now().year
-    year_of_birth = self.date_birth_line_edit.text()
-
-    age = current_year - year_of_birth
-    self.output_label.setText("Age: " + str(age))
-    return age
+    def calculate_age(self):
+        current_year = datetime.now().year
+        date_of_birth = self.date_birth_line_edit.text()
+        year_of_birth = datetime.strftime(date_of_birth, "%m/%d/%Y").date().year
+        age = current_year - year_of_birth
+        self.output_label.setText("Age: " + str(age))
+        return age
 
 app = QApplication(sys.argv)
 age_calculator = AgeCalculator()
