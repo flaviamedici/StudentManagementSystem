@@ -28,7 +28,11 @@ class AgeCalculator(QWidget):
         grid.addWidget(calculate_button, 2, 0, 1, 2)
         grid.addWidget(output_label, 3, 0, 1, 2)
 
+
         self.setLayout(grid)
+
+
+#function for calculating the age
 
     def calculate_age(self):
         current_year = datetime.now().year
