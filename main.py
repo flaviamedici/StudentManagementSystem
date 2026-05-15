@@ -1,4 +1,4 @@
-from PyQt6.QtWidgets import QApplication, QMainWindow, QMenu, QTableWidget, QTableWidgetItem, QDialog, QVBoxLayout, \
+from PyQt6.QtWidgets import QApplication, QMainWindow, QTableWidget, QTableWidgetItem, QDialog, QVBoxLayout, \
     QLineEdit, QComboBox, QPushButton
 from PyQt6.QtGui import QAction
 from PyQt6.QtCore import Qt
